@@ -1,11 +1,13 @@
 package com.abdx.conference_service.model;
 
 import com.abdx.conference_service.entity.Conference;
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.Instant;
 
 @Data
+@Builder
 public class Keynote {
     private Long id;
 
