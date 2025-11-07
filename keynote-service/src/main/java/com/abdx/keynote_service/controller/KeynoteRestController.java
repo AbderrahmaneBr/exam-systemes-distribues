@@ -18,7 +18,7 @@ public class KeynoteRestController {
     KeynoteService keynoteService;
 
     @GetMapping("/conference/{conferenceId}")
-    public Collection<Keynote> getKeynotesByConference(Long conferenceId) {
+    public Collection<Keynote> getKeynotesByConference(@PathVariable Long conferenceId) {
         return keynoteService.findByConferenceId(conferenceId);
     }
 }
